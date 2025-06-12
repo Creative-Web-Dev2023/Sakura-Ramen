@@ -1,7 +1,6 @@
-import{Component}from '@angular/core';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NavbarComponent } from './navbar/navbar.component';
-
 
 @Component({
   selector: 'app-landing-page',
@@ -12,6 +11,6 @@ import { NavbarComponent } from './navbar/navbar.component';
     <h1 class="fontRaleway">Sakura Ramen</h1>
     <h2>Best Ramen in Town</h2>
   </section>`,
-  styleUrls:['./landingPage.component.scss']
+  styleUrls: ['./landingPage.component.scss'],
 })
-export class LandingPageComponent{}
+export class LandingPageComponent {}
