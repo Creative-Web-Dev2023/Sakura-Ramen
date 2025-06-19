@@ -1,39 +1,26 @@
 
 @import'./../../../../styles.scss';
 
-@mixin borderStyling($bStyle){
-    border-radius: 8px;
-   border:3px $bStyle white;
- }
-
-@mixin fontColor($color) {
-     color: $color;
-}
-
 
 header {
   width: 100%;
   padding: 32px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   width: 100%;
+  @include dFlex($jc: space-between, $g: 24px);
 
   ul {
-    display: flex;
-    gap: 24px;
-    align-items: center;
-    margin: 0;
-    padding: 0;
+     @include dFlex($jc: center, $g: 24px);
+        margin: 0;
+        padding: 0;
 
     li {
       list-style-type: none;
-      display: flex;
-      align-items: center;
+     @include dFlex($jc: center,$ai: center);
+     
     }
   }
   > img {
@@ -42,9 +29,7 @@ header {
   }
   > nav {
     width: 64%;
-    display: flex;
     gap: 24px;
-    align-items: center;
   }
   a {
     text-decoration: none;
@@ -63,8 +48,6 @@ header {
   .phone_btn {
     background-color: #c22e2e;
     @include borderStyling(dotted);
-    display: flex;
-    align-items: center;
     justify-content: center;
     gap: 4px;
     

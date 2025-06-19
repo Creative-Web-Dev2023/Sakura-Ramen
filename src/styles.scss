@@ -9,6 +9,20 @@
 $a-fontsize:1.5rem ;
 $a-color: white;
 
+@mixin borderStyling($bStyle){
+    border-radius: 8px;
+   border:3px $bStyle white;
+ }
+
+@mixin fontColor($color) {
+     color: $color;
+}
+@mixin dFlex($jc:center, $ai:center, $g: 0px){
+  display: flex;
+  justify-content: $jc;
+  align-items: $ai;
+  gap: $g;
+}
 
 h1,h2,h3 {
   font-family: "Raleway", sans-serif;
