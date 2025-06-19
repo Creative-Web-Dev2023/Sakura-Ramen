@@ -1,0 +1,63 @@
+
+.back-btn {
+    display: flex;
+    align-items: center;
+    background-color: burlywood;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    
+    img {
+        margin-right: 0.5rem;
+        width: 20px;
+        height: auto;
+    }
+    
+    &:hover {
+        background-color: goldenrod;
+    }
+    p{
+        margin: 0;
+        font-size: 1rem;
+        color: black;
+    }
+}
+.section {
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+.imprint-section {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #fff8f0;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+  }
+
+  p {
+    margin-bottom: 1.2rem;
+    font-size: 1.08rem;
+    color: #333;
+    line-height: 1.6;
+  }
+
+  a {
+    color: #b35c1e;
+    text-decoration: underline;
+    word-break: break-all;
+    &:hover {
+      color: #e07a3f;
+    }
+  }
+}

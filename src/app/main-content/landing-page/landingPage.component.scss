@@ -1,0 +1,24 @@
+h1,
+h2 {
+  color: white;
+}
+
+h1 {
+  font-size: 5.3rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+  margin-bottom: 30%;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../../../assets/img/hero_bg.jpg");
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

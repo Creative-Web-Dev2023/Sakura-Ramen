@@ -1,0 +1,54 @@
+nav{
+    width:100%;
+    padding:32px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    >img{
+      width:64px;
+      height:64px;
+}
+    >div{
+        width:64%;
+        display:flex;
+        gap:24px;
+        align-items: center;
+
+        >a{
+            &:hover{
+                color: #c22e2e;
+            }
+        }
+    }
+}
+a{
+    text-decoration:none;
+    color:beige;
+    font-size: 1.5rem;
+}
+.phone_btn{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:4px;
+    background-color: #c22e2e;
+    border:white 2px solid;
+    border-radius: 10px;
+    cursor:pointer;
+    padding:4px 12px;
+    text-decoration: none;
+   
+    >img{
+        width:24px;
+        height:24px;
+    }
+    >.tel-box{
+        color:beige;
+        font-size: 1rem;
+        text-decoration:none;
+        &hover{
+            color: #161515;
+        }
+    }
+}

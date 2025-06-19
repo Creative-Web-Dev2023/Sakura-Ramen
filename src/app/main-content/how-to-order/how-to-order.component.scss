@@ -1,0 +1,34 @@
+.how-to-order {
+    padding: 120px 32px;
+}
+h2 {
+    margin: 0 0 20px 0;
+    font-size: 80px;
+    font-weight: bold;
+}
+.order-steps {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  text-align: center;
+  padding: 2rem;
+
+  .step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 150px;
+
+    img {
+      width: 80px;
+      height: auto;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 2rem;
+      font-weight: 500;
+      margin: 0;
+    }
+  }
+}
