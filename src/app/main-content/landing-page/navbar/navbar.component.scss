@@ -1,29 +1,30 @@
+
+@import'./../../../../styles.scss';
+
 header {
   width: 100%;
   padding: 32px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: yellow 2px solid;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   width: 100%;
-  
-  ul {
-      display: flex;
-      gap:1em;
-      align-items: center;
-      margin: 0;
-      padding: 0;
-      border: olivedrab 2px solid;
 
-    
-       li {
-         list-style-type: none;
-          display: flex;
-          align-items: center;
+  ul {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    border: olivedrab 2px solid;
+
+    li {
+      list-style-type: none;
+      display: flex;
+      align-items: center;
     }
   }
   > img {
@@ -35,41 +36,44 @@ header {
     display: flex;
     gap: 24px;
     align-items: center;
-
-   
-}
-a {
-  text-decoration: none;
-  color: beige;
-  font-size: 1.5rem;
-  transition: color 0.2s;
-}
-a:hover {
-  color: #c22e2e;
-}
-.phone_btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 4px;
-  background-color: #c22e2e;
-  border: white 2px solid;
-  border-radius: 10px;
-  cursor: pointer;
-  padding: 4px 12px;
-  text-decoration: none;
-
-  > img {
-    width: 24px;
-    height: 24px;
   }
-  > .tel-box {
-    color: beige;
-    font-size: 1rem;
+  a {
     text-decoration: none;
-    &hover {
-      color: #161515;
+    color: $a-color;
+    font-size: $a-fontsize;
+    
+    &:hover {
+      color: #c22e2e;
+    }
+
+    &:hover {
+      color: #c22e2e;
     }
   }
-}
+
+  .phone_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    background-color: #c22e2e;
+    border: white 2px solid;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 4px 12px;
+    text-decoration: none;
+
+    > img {
+      width: 24px;
+      height: 24px;
+    }
+    > .tel-box {
+      color: beige;
+      font-size: 1rem;
+      text-decoration: none;
+      &:hover {
+        color: #161515;
+      }
+    }
+  }
 }
